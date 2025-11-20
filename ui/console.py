@@ -10,7 +10,7 @@ class ConsoleUI:
     def show_menu(self):
         print("OS SIMULATOR")
         print("1. Cargar procesos desde archivo")
-        print("2. Ejecutar FCFS")
+        print("2. Ejecutar Scheduler")
         print("3. Mostrar resultados")
         print("4. Mostrar métricas")
         print("5. Salir")
