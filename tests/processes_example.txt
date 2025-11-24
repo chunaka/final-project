@@ -1,4 +1,39 @@
-# pid,arrival,burst,priority,user
+# ============================================================
+# ARCHIVO DE CONFIGURACIÓN DE PROCESOS
+# ============================================================
+#
+# Formato: pid,arrival_time,burst_time,priority,user
+#
+# Campos:
+#   - pid:          Process ID (número único)
+#   - arrival_time: Tiempo de llegada al sistema
+#   - burst_time:   Tiempo de CPU requerido
+#   - priority:     Prioridad del proceso (0 = más alta)
+#   - user:         Usuario propietario
+#
+# Ejemplo:
+#   1,0,5,0,alice
+#   └─ Proceso 1, llega en t=0, necesita 5 unidades de CPU,
+#      prioridad 0, pertenece a 'alice'
+#
+# ============================================================
+
+# Procesos de ejemplo - Escenario básico
+# ============================================================
+# Proceso 1: Tarea de alice con prioridad alta
 1,0,5,0,alice
+
+# Proceso 2: Tarea de bob, llega en t=1
 2,1,3,1,bob
+
+# Proceso 3: Tarea larga de root
 3,2,8,0,root
+
+
+# Puedes agregar más procesos siguiendo el formato:
+# pid,arrival,burst,priority,user
+#
+# Ejemplo de escenario con más procesos:
+# 4,3,2,2,alice
+# 5,4,6,1,bob
+# 6,5,4,0,root

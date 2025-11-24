@@ -1,0 +1,25 @@
+# Archivo de configuración del sistema de archivos
+# Formato: tipo,nombre,permisos,propietario,contenido_o_vacio
+# Tipos: user, dir, file
+# 
+# Ejemplo:
+# user,alice,1000,users,developers
+# dir,/home/alice,755,alice
+# file,/home/alice/readme.txt,644,alice,Welcome to my home!
+
+# Usuarios
+user,alice,1000,users,developers
+user,bob,1001,users
+
+# Estructura de directorios
+dir,/home,755,root
+dir,/tmp,777,root
+dir,/etc,755,root
+dir,/home/alice,755,alice
+dir,/home/bob,755,bob
+
+# Archivos
+file,/home/alice/readme.txt,644,alice,Welcome to Alice's home directory!
+file,/home/alice/notes.txt,600,alice,Private notes here
+file,/home/bob/readme.txt,644,bob,Bob's files
+file,/tmp/shared.txt,666,root,This is a shared file

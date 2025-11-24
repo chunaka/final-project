@@ -33,7 +33,7 @@ class ConsoleUI:
         print("  2. Ejecutar Scheduler")
         print("  3. Mostrar resultados")
         print("  4. Mostrar métricas")
-        print("  5. Salir")
+        print("  5. Volver al menú principal")
         self.print_separator()
         return input("Seleccione una opción: ").strip()
 
